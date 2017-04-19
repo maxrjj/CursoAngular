@@ -3,7 +3,7 @@ function minhaFuncao(x, y) {
     return x + y;
 }
 //ES6 ou ES 2015
-var num = 2;
+var num = 3;
 //posso tipar a variavel como string
 var letra = 'a';
 var numeros = [1, 2, 3];
