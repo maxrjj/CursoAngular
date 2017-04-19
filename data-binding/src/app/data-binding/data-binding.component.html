@@ -11,6 +11,31 @@
 <article>
   <section>
     <h1>Property Binding</h1>
+    <p>Usando propety binding para source url da imagem</p>
     <img [src]="urlImg">
   </section>
 </article>
+<article>
+    <h1>Class e Style Binding </h1>
+    <div>
+      <br>
+        <select #classe (change) = "0">
+          <option value="alert-success">success</option>
+          <option value="alert-info">info</option>
+          <option value="alert-warning">warning</option>
+          <option value="alert-danger">danger</option>
+        </select>
+        <br><br>
+        <div class="alert" role="alert" [class.alert-success]="classe.value=='alert-success'">success</div>
+        <div class="alert" role="alert" [class.alert-info]="classe.value=='alert-info'">info</div>
+        <div class="alert" role="alert" [class.alert-warning]="classe.value=='alert-warning'">warning</div>
+        <div class="alert" role="alert" [class.alert-danger]="classe.value=='alert-danger'">danger</div>
+        <br><br>
+        <div class="alert alert-danger" role="alert" [style.display]="classe.value=='alert-danger' ? 'block' : 'none' ">
+          <p>texto só aparece quando danger é selecionado</p>
+          <br>
+          <p>Exemplo de style binding com o Angular</p>
+          </div>
+    </div>
+</article>
+
