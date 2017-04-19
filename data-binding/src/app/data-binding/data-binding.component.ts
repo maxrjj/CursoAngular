@@ -7,15 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataBindingComponent implements OnInit {
 
-  url = "http://www.mvasconcelos.com";
-  constructor() { }
   Booleana = true;
-getValor(){
-  return 1;
-}
-retornaBool(){
-return true;
-}
+  url: string = "http://www.mvasconcelos.com";
+  urlImg: string = "http://csharpcorner.mindcrackerinc.netdna-cdn.com/UploadFile/MinorCatImages/052622AM.png.ashx?width=64&height=64";
+
+  constructor() { }
+  
+  
+  
+  getValor(){
+    return 1;
+  }
+  
+  retornaBool(){
+  return true;
+  }
 
   ngOnInit() {
   }
