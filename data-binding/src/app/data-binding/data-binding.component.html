@@ -25,12 +25,12 @@
           <option value="alert-warning">warning</option>
           <option value="alert-danger">danger</option>
         </select>
-        <br><br>
+        
         <div class="alert" role="alert" [class.alert-success]="classe.value=='alert-success'">success</div>
         <div class="alert" role="alert" [class.alert-info]="classe.value=='alert-info'">info</div>
         <div class="alert" role="alert" [class.alert-warning]="classe.value=='alert-warning'">warning</div>
         <div class="alert" role="alert" [class.alert-danger]="classe.value=='alert-danger'">danger</div>
-        <br><br>
+        
         <div class="alert alert-danger" role="alert" [style.display]="classe.value=='alert-danger' ? 'block' : 'none' ">
           <p>texto só aparece quando danger é selecionado</p>
           <br>
@@ -38,4 +38,17 @@
           </div>
     </div>
 </article>
+<section class="event-binding">
+  <article>
+    <h3>Event Binding</h3>
+  </article>
+  <div>
+    <button class="btn btn-primary" (click)="botaoClicado()">me click</button>  
+    <br><br>
+    <input type="text"
+    (keyup)="onKeyUp($event)"/>
+    <p>Valor Atual: {{valorAtual}}</p>
+  </div>
+
+</section>
 
